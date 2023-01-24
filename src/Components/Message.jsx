@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
+import React from "react";
 
-export const Message = () => {
-  const [owner, setOwner] = useState(false)
+export const Message = ({ owner }) => {
   return (
-    <div className={`flex mb-4 gap-4 ${owner && 'flex flex-row-reverse'}`}>
+    <div className={`flex mb-4 gap-4 ${owner && "flex flex-row-reverse"}`}>
       <div className="flex flex-col">
         <img
           className="w-12 h-12 object-cover rounded-full aspect-square "
@@ -13,13 +12,13 @@ export const Message = () => {
         <span className="text-sm text-gray-400 font-semibold">just now</span>
       </div>
       <div
-        className={`max-w-[80%] flex flex-col gap-4 ${owner && 'items-end'}`}
+        className={`max-w-[80%] flex flex-col gap-4 ${owner && "items-end"}`}
       >
         <p
           className={`${
             owner
-              ? 'bg-[#5264a7] text-white px-4 py-3 rounded-l-lg rounded-b-lg'
-              : 'bg-white px-4 py-3 rounded-r-lg rounded-b-lg'
+              ? "bg-[#5264a7] text-white px-4 py-3 rounded-l-lg rounded-b-lg"
+              : "bg-white px-4 py-3 rounded-r-lg rounded-b-lg"
           } max-w-max`}
         >
           Hello, how are you?
@@ -31,5 +30,5 @@ export const Message = () => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
