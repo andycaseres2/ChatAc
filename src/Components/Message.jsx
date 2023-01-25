@@ -17,7 +17,7 @@ export const Message = ({ owner }) => {
         <p
           className={`${
             owner
-              ? "bg-[#5264a7] text-white px-4 py-3 rounded-l-lg rounded-b-lg"
+              ? "bg-secondary text-white px-4 py-3 rounded-l-lg rounded-b-lg"
               : "bg-white px-4 py-3 rounded-r-lg rounded-b-lg"
           } max-w-max`}
         >

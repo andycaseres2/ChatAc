@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 export const Search = () => {
   return (
     <div className="w-full">
       <div className="w-full">
         <input
-          className="px-2 py-3 w-full focus:outline-none bg-transparent text-white border-b border-gray-600"
+          className="px-2 py-3 w-full focus:outline-none bg-transparent text-white placeholder:text-white border-b border-gray-700"
           type="text"
           placeholder="Find a user"
         />
@@ -23,5 +23,5 @@ export const Search = () => {
         </div>
       </div> */}
     </div>
-  )
-}
+  );
+};
